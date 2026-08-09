@@ -1,0 +1,45 @@
+<section class="page-shell">
+  <div class="page-header">
+    <h1>Dashboard</h1>
+    <p>Live analytics simulation powered by ApexCharts. Data refreshes every 3 seconds.</p>
+  </div>
+
+  <div class="stats-grid">
+    <div class="stat-card">
+      <span>Total Users</span>
+      <strong data-counter="18492">0</strong>
+      <span class="badge badge-success" style="width:fit-content">↑ 12.4%</span>
+    </div>
+    <div class="stat-card">
+      <span>Page Views</span>
+      <strong data-counter="94310">0</strong>
+      <span class="badge badge-accent" style="width:fit-content">↑ 8.1%</span>
+    </div>
+    <div class="stat-card">
+      <span>Revenue</span>
+      <strong id="revenue-val">$0</strong>
+      <span class="badge badge-success" style="width:fit-content">↑ 5.6%</span>
+    </div>
+    <div class="stat-card">
+      <span>Bounce Rate</span>
+      <strong data-counter="34">0</strong>
+      <span class="badge badge-warning" style="width:fit-content">↓ 2.3%</span>
+    </div>
+  </div>
+
+  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:24px">
+    <div class="chart-panel">
+      <h3 style="margin-bottom:16px">Visitor Trends</h3>
+      <div id="chart-line" style="min-height:220px"></div>
+    </div>
+    <div class="chart-panel">
+      <h3 style="margin-bottom:16px">Traffic Sources</h3>
+      <div id="chart-pie" style="min-height:220px"></div>
+    </div>
+  </div>
+
+  <div class="chart-panel" style="margin-top:0">
+    <h3 style="margin-bottom:16px">Monthly Revenue</h3>
+    <div id="chart-bar" style="min-height:220px"></div>
+  </div>
+</section>
