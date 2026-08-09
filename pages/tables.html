@@ -1,0 +1,31 @@
+<section class="page-shell">
+  <div class="page-header">
+    <h1>Tables</h1>
+    <p>Client-side search, multi-column sort, pagination, and CSV export — no server required.</p>
+  </div>
+
+  <div class="table-panel">
+    <div class="table-toolbar">
+      <input type="search" id="table-search" placeholder="🔍  Search name, role, department…" aria-label="Search table" style="max-width:320px" />
+      <select id="page-size" aria-label="Rows per page" style="width:auto">
+        <option value="7">7 per page</option>
+        <option value="10">10 per page</option>
+        <option value="20">20 per page</option>
+      </select>
+      <button id="table-export" class="btn-secondary btn-sm" aria-label="Export table as CSV">⬇ Export CSV</button>
+    </div>
+
+    <div class="table-wrap" role="region" aria-label="Employee data table">
+      <table aria-label="Employees">
+        <thead id="table-head"></thead>
+        <tbody id="table-body"></tbody>
+      </table>
+    </div>
+
+    <div class="table-pagination">
+      <button id="page-prev" class="btn-secondary btn-sm" aria-label="Previous page">← Prev</button>
+      <span id="page-info" aria-live="polite">Page 1 of 3</span>
+      <button id="page-next" class="btn-secondary btn-sm" aria-label="Next page">Next →</button>
+    </div>
+  </div>
+</section>
