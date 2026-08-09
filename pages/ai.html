@@ -1,0 +1,55 @@
+<section class="page-shell">
+  <div class="page-header">
+    <h1>AI Lab</h1>
+    <p>TensorFlow.js running entirely in the browser. No server, no API keys.</p>
+  </div>
+
+  <div class="ai-grid">
+    <div class="ai-panel">
+      <h2 style="font-size:1.1rem">Test Image or Webcam</h2>
+      <img id="ai-img" src="https://images.unsplash.com/photo-1587300003388-59208cc962cb?w=640&q=60" alt="Sample dog photo for AI classification" style="border-radius:14px;max-height:320px;width:100%;object-fit:cover" />
+      <video id="ai-webcam" autoplay playsinline hidden aria-label="Webcam stream" style="display:none"></video>
+      <div style="display:flex;gap:8px;flex-wrap:wrap">
+        <button id="ai-classify" aria-label="Classify image with MobileNet">🔍 Classify Image</button>
+        <button id="ai-detect"   aria-label="Detect objects with COCO-SSD" class="btn-secondary">📦 Detect Objects</button>
+        <button id="ai-face"     aria-label="Detect faces with BlazeFace" class="btn-secondary">🙂 Detect Face</button>
+        <button id="ai-hand"     aria-label="Detect hands with HandPose" class="btn-secondary">✋ Detect Hand</button>
+        <button id="ai-webcam-btn" class="btn-secondary" aria-label="Toggle webcam">📷 Webcam</button>
+      </div>
+      <div class="ai-output" id="ai-output" aria-live="polite">Load a model and click Classify or Detect.</div>
+    </div>
+
+    <div class="ai-panel">
+      <h2 style="font-size:1.1rem">Model Status</h2>
+      <div class="ai-model-list" id="ai-model-list">
+        <div class="ai-model-item">
+          <span>TensorFlow.js</span>
+          <div class="model-progress"><div class="model-progress-bar" id="bar-tf" style="width:0%"></div></div>
+          <span id="status-tf" style="font-size:0.78rem;color:var(--text-muted);white-space:nowrap">Not loaded</span>
+        </div>
+        <div class="ai-model-item">
+          <span>MobileNet</span>
+          <div class="model-progress"><div class="model-progress-bar" id="bar-mobilenet" style="width:0%"></div></div>
+          <span id="status-mobilenet" style="font-size:0.78rem;color:var(--text-muted);white-space:nowrap">Not loaded</span>
+        </div>
+        <div class="ai-model-item">
+          <span>COCO-SSD</span>
+          <div class="model-progress"><div class="model-progress-bar" id="bar-cocossd" style="width:0%"></div></div>
+          <span id="status-cocossd" style="font-size:0.78rem;color:var(--text-muted);white-space:nowrap">Not loaded</span>
+        </div>
+        <div class="ai-model-item">
+          <span>BlazeFace</span>
+          <div class="model-progress"><div class="model-progress-bar" id="bar-blazeface" style="width:0%"></div></div>
+          <span id="status-blazeface" style="font-size:0.78rem;color:var(--text-muted);white-space:nowrap">Not loaded</span>
+        </div>
+        <div class="ai-model-item">
+          <span>HandPose</span>
+          <div class="model-progress"><div class="model-progress-bar" id="bar-handpose" style="width:0%"></div></div>
+          <span id="status-handpose" style="font-size:0.78rem;color:var(--text-muted);white-space:nowrap">Not loaded</span>
+        </div>
+      </div>
+      <button id="ai-load-models" style="width:100%;margin-top:8px" aria-label="Load all AI models">⬇ Load Models</button>
+      <div style="font-size:0.8rem;color:var(--text-muted)">⚠ Models are large (~8 MB each). Loading may take 30–60 s on a slow connection.</div>
+    </div>
+  </div>
+</section>
