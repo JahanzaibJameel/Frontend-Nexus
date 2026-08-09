@@ -1,0 +1,18 @@
+<section class="page-shell">
+  <div class="page-header">
+    <h1>WebTransport</h1>
+    <p>Low-latency, multiplexed transport over HTTP/3 — the future of real-time web.</p>
+  </div>
+
+  <div class="form-field" style="margin-bottom:16px;">
+    <button class="btn" id="wt-connect-btn">Connect to Echo Server</button>
+    <button class="btn btn-secondary" id="wt-close-btn" disabled>Close</button>
+  </div>
+
+  <div style="display:flex;gap:8px;margin-bottom:12px;">
+    <input id="wt-message" placeholder="Message…" style="flex:1;padding:8px;border-radius:6px;border:1px solid var(--border);background:var(--bg-secondary);color:var(--text-primary);" />
+    <button class="btn btn-sm" id="wt-send-btn" disabled>Send</button>
+  </div>
+
+  <div id="wt-log" style="background:var(--bg-secondary);border-radius:8px;padding:12px;height:200px;overflow-y:auto;font-family:JetBrains Mono,monospace;font-size:0.85rem;color:var(--text-secondary);"></div>
+</section>

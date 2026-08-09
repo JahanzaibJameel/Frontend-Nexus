@@ -1,0 +1,33 @@
+<section class="page-shell">
+  <div class="page-header">
+    <div style="display: flex; justify-content: space-between; align-items: flex-end; flex-wrap: wrap; gap: 16px;">
+      <div>
+        <h1>47 Vanilla JS Libraries Explorer</h1>
+        <p>Explore the complete collection of CDN-backed libraries integrated without npm or build tools.</p>
+      </div>
+      <div style="display: flex; gap: 12px; align-items: center; width: 100%; max-width: 400px;">
+        <input type="search" id="lib-search" placeholder="Search libraries (e.g. Chart, Three, Swiper)..." style="width: 100%; padding: 10px 16px; border-radius: 10px; border: 1px solid var(--border); background: var(--bg-surface); color: var(--text-primary);" />
+      </div>
+    </div>
+
+    <!-- Category Filters -->
+    <div id="lib-filters" style="display: flex; gap: 8px; flex-wrap: wrap; margin-top: 20px;">
+      <button class="btn btn-sm filter-btn active" data-category="all">All (47)</button>
+      <button class="btn btn-sm filter-btn" data-category="Charts">Charts & Data</button>
+      <button class="btn btn-sm filter-btn" data-category="Forms">Forms & Inputs</button>
+      <button class="btn btn-sm filter-btn" data-category="Tables">Tables & Search</button>
+      <button class="btn btn-sm filter-btn" data-category="Media">Media & Gallery</button>
+      <button class="btn btn-sm filter-btn" data-category="UI">Carousel & UI</button>
+      <button class="btn btn-sm filter-btn" data-category="Files">Files & Upload</button>
+      <button class="btn btn-sm filter-btn" data-category="Maps">Maps & Geo</button>
+      <button class="btn btn-sm filter-btn" data-category="Markdown">Markdown & Syntax</button>
+      <button class="btn btn-sm filter-btn" data-category="3D">3D, Physics & Canvas</button>
+      <button class="btn btn-sm filter-btn" data-category="AI">AI & Machine Learning</button>
+      <button class="btn btn-sm filter-btn" data-category="Animation">Animation</button>
+    </div>
+  </div>
+
+  <div id="libraries-grid" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 20px; margin-top: 24px;">
+    <!-- Rendered dynamically -->
+  </div>
+</section>

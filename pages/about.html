@@ -1,0 +1,49 @@
+<section class="page-shell" view-transition-name="page-content">
+  <div class="page-header">
+    <h1>About Frontend Nexus</h1>
+    <p>The Ultimate Vanilla JavaScript Showcase — 2026 Industry Standard</p>
+  </div>
+
+  <!-- Showcase Metrics Breakdown -->
+  <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 16px; margin-bottom: 32px;">
+    <div style="background: var(--bg-surface); padding: 20px; border-radius: 16px; border: 1px solid var(--border); text-align: center;">
+      <strong id="stats-lib-count" style="font-size: 2.5rem; color: var(--accent); font-weight: 800; display: block;">47</strong>
+      <span style="font-size: 0.9rem; color: var(--text-muted); font-weight: 600;">CDN Libraries</span>
+    </div>
+    <div style="background: var(--bg-surface); padding: 20px; border-radius: 16px; border: 1px solid var(--border); text-align: center;">
+      <strong id="stats-api-count" style="font-size: 2.5rem; color: #a855f7; font-weight: 800; display: block;">27</strong>
+      <span style="font-size: 0.9rem; color: var(--text-muted); font-weight: 600;">Browser APIs</span>
+    </div>
+    <div style="background: var(--bg-surface); padding: 20px; border-radius: 16px; border: 1px solid var(--border); text-align: center;">
+      <strong id="stats-page-count" style="font-size: 2.5rem; color: #10b981; font-weight: 800; display: block;">22</strong>
+      <span style="font-size: 0.9rem; color: var(--text-muted); font-weight: 600;">SPA Pages</span>
+    </div>
+    <div style="background: var(--bg-surface); padding: 20px; border-radius: 16px; border: 1px solid var(--border); text-align: center;">
+      <strong id="stats-elem-count" style="font-size: 2.5rem; color: #f59e0b; font-weight: 800; display: block;">10</strong>
+      <span style="font-size: 0.9rem; color: var(--text-muted); font-weight: 600;">Custom Elements</span>
+    </div>
+  </div>
+
+  <!-- Architecture & Design Philosophy -->
+  <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 24px;">
+    <div style="background: var(--bg-surface); padding: 24px; border-radius: 16px; border: 1px solid var(--border);">
+      <h2 style="font-size: 1.25rem; font-weight: 700; margin-top: 0; color: var(--text-primary);">🏛️ Architectural Core</h2>
+      <ul style="padding-left: 20px; color: var(--text-secondary); line-height: 1.8;">
+        <li><strong>SPA Hash Router</strong>: Zero-dependency route matching with HTML snippet injection and View Transitions API support.</li>
+        <li><strong>Dynamic Library Loader</strong>: Non-blocking script/style loader with retry logic and timeout fallback.</li>
+        <li><strong>Strict Memory Management</strong>: Auto-disposal of WebGL renderers, animation frames, webcam tracks, and event listeners.</li>
+        <li><strong>Custom Elements System</strong>: Native Shadow DOM components (`<app-navbar>`, `<app-sidebar>`, `<app-footer>`, etc.).</li>
+      </ul>
+    </div>
+
+    <div style="background: var(--bg-surface); padding: 24px; border-radius: 16px; border: 1px solid var(--border);">
+      <h2 style="font-size: 1.25rem; font-weight: 700; margin-top: 0; color: var(--text-primary);">🔒 Security & PWA</h2>
+      <ul style="padding-left: 20px; color: var(--text-secondary); line-height: 1.8;">
+        <li><strong>Strict Content Security Policy (CSP)</strong>: Enforced CDN boundaries and script-src restrictions.</li>
+        <li><strong>XSS Protection</strong>: Dynamic HTML sanitization powered by DOMPurify.</li>
+        <li><strong>Offline PWA Support</strong>: Service worker precaching app shell & static assets with network-first page fallbacks.</li>
+        <li><strong>Command Palette</strong>: Universal search modal (`Ctrl+K`) for instant route and command triggers.</li>
+      </ul>
+    </div>
+  </div>
+</section>
