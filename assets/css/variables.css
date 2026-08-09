@@ -1,0 +1,49 @@
+/* ─── Design Tokens ─────────────────────────────────────────────────────── */
+:root {
+  /* Fonts */
+  --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+  --font-mono: 'JetBrains Mono', 'Fira Code', monospace;
+
+  /* Background */
+  --bg-primary:   #0f172a;
+  --bg-secondary: #111827;
+  --bg-surface:   #1e293b;
+  --bg-muted:     rgba(255, 255, 255, 0.06);
+
+  /* Text */
+  --text-primary:   #e2e8f0;
+  --text-secondary: #94a3b8;
+  --text-muted:     #64748b;
+
+  /* Borders */
+  --border: rgba(148, 163, 184, 0.18);
+  --border-focus: rgba(56, 189, 248, 0.6);
+
+  /* Brand / Semantic */
+  --accent:  #38bdf8;
+  --accent-dark: #0284c7;
+  --success: #22c55e;
+  --warning: #f59e0b;
+  --danger:  #ef4444;
+  --info:    #818cf8;
+
+  /* Sizing */
+  --radius-sm: 10px;
+  --radius:    18px;
+  --radius-lg: 24px;
+  --radius-xl: 32px;
+
+  /* Elevation */
+  --shadow-sm: 0 4px 16px rgba(15, 23, 42, 0.2);
+  --shadow:    0 8px 40px rgba(15, 23, 42, 0.3);
+  --shadow-lg: 0 24px 80px rgba(15, 23, 42, 0.4);
+
+  /* Layout */
+  --sidebar-width: 260px;
+  --navbar-height: 64px;
+  --max-width:     1200px;
+
+  /* Motion */
+  --transition: 0.2s ease;
+  --transition-slow: 0.35s ease;
+}

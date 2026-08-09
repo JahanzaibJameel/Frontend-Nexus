@@ -1,0 +1,71 @@
+/* ─── Keyframes ─────────────────────────────────────────────────────────── */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+@keyframes slideUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideDown {
+  from { opacity: 0; transform: translateY(-12px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes scaleIn {
+  from { opacity: 0; transform: scale(0.92); }
+  to   { opacity: 1; transform: scale(1); }
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 0.4; }
+  50%       { opacity: 1; }
+}
+
+@keyframes shimmer {
+  from { background-position: -200% 0; }
+  to   { background-position: 200% 0; }
+}
+
+@keyframes counterUp {
+  from { opacity: 0; transform: translateY(10px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* ─── Utility Classes ───────────────────────────────────────────────────── */
+[data-animate='fade']    { animation: fadeIn 0.3s ease both; }
+[data-animate='up']      { animation: slideUp 0.35s ease both; }
+[data-animate='down']    { animation: slideDown 0.3s ease both; }
+[data-animate='scale']   { animation: scaleIn 0.3s ease both; }
+
+/* Stagger delay helpers */
+[data-delay='1'] { animation-delay: 0.05s; }
+[data-delay='2'] { animation-delay: 0.10s; }
+[data-delay='3'] { animation-delay: 0.15s; }
+[data-delay='4'] { animation-delay: 0.20s; }
+[data-delay='5'] { animation-delay: 0.25s; }
+[data-delay='6'] { animation-delay: 0.30s; }
+
+/* ─── Skeleton shimmer ──────────────────────────────────────────────────── */
+.skeleton-line {
+  height: 14px;
+  background: linear-gradient(90deg, var(--bg-surface) 25%, var(--bg-muted) 50%, var(--bg-surface) 75%);
+  background-size: 200% 100%;
+  animation: shimmer 1.6s infinite linear;
+  border-radius: 999px;
+}
+
+/* ─── Respect prefers-reduced-motion ───────────────────────────────────── */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

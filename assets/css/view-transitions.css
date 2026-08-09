@@ -1,0 +1,41 @@
+/* ─── View Transitions ──────────────────────────────────────────────────── */
+
+/* Page content naming */
+#app {
+  view-transition-name: page-content;
+}
+
+/* Transition animation for the page area */
+@keyframes vtSlideIn {
+  from { opacity: 0; transform: translateY(8px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+@keyframes vtSlideOut {
+  from { opacity: 1; transform: translateY(0); }
+  to   { opacity: 0; transform: translateY(-8px); }
+}
+
+::view-transition-old(page-content) {
+  animation: vtSlideOut 0.18s ease forwards;
+}
+::view-transition-new(page-content) {
+  animation: vtSlideIn 0.22s ease forwards;
+}
+
+/* Full-root fallback (when page-content not named) */
+::view-transition-old(root) {
+  animation: vtSlideOut 0.18s ease forwards;
+}
+::view-transition-new(root) {
+  animation: vtSlideIn 0.22s ease forwards;
+}
+
+/* Respect reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  ::view-transition-old(root),
+  ::view-transition-new(root),
+  ::view-transition-old(page-content),
+  ::view-transition-new(page-content) {
+    animation: none;
+  }
+}
