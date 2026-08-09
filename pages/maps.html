@@ -1,0 +1,21 @@
+<section class="page-shell">
+  <div class="page-header">
+    <h1>Maps</h1>
+    <p>Interactive world map powered by Leaflet + OpenStreetMap. Click anywhere to drop a marker.</p>
+  </div>
+
+  <div class="map-card">
+    <div id="map-container" aria-label="Interactive map" role="application"></div>
+    <div class="map-toolbar">
+      <button id="map-locate" aria-label="Find my location">📍 My Location</button>
+      <button id="map-clear" class="btn-secondary" aria-label="Clear all markers">🗑 Clear Markers</button>
+      <select id="map-tiles" aria-label="Select map style" style="width:auto">
+        <option value="osm">OpenStreetMap</option>
+        <option value="topo">Topo</option>
+        <option value="dark">CartoDB Dark</option>
+        <option value="light">CartoDB Light</option>
+      </select>
+    </div>
+    <div id="location-output" aria-live="polite">Click on the map to place a marker, or use "My Location".</div>
+  </div>
+</section>

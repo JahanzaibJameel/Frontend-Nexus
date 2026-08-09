@@ -1,0 +1,28 @@
+<section class="page-shell">
+  <div class="page-header">
+    <h1>Media</h1>
+    <p>Video player powered by Plyr. Audio player with a live Web Audio API visualizer.</p>
+  </div>
+
+  <div class="media-grid">
+    <div class="media-card">
+      <h2>Video Player (Plyr)</h2>
+      <video id="plyr-video" controls playsinline crossorigin>
+        <source src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.webm" type="video/webm" />
+        <source src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4" type="video/mp4" />
+        Your browser does not support video.
+      </video>
+      <div style="font-size:0.82rem;color:var(--text-muted)">Video: <em>flower</em> (CC0) — Mozilla Interactive Examples</div>
+    </div>
+
+    <div class="media-card">
+      <h2>Audio + Visualizer</h2>
+      <audio id="audio-player" controls loop
+        src="https://interactive-examples.mdn.mozilla.net/media/cc0-audio/t-rex-roar.mp3">
+        Your browser does not support audio.
+      </audio>
+      <canvas id="audio-visualizer" width="600" height="80" aria-label="Audio visualizer" role="img"></canvas>
+      <div style="font-size:0.82rem;color:var(--text-muted)">Audio: <em>T-Rex Roar</em> (CC0) — Mozilla</div>
+    </div>
+  </div>
+</section>
