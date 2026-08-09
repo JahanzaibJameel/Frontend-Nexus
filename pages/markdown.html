@@ -1,0 +1,17 @@
+<section class="page-shell">
+  <div class="page-header" style="display:flex;justify-content:space-between;align-items:flex-start;flex-wrap:wrap;gap:10px">
+    <div>
+      <h1>Markdown Editor</h1>
+      <p>Live preview with Marked.js, syntax highlighting via Prism.js, and XSS-safe rendering with DOMPurify.</p>
+    </div>
+    <div style="display:flex;gap:8px">
+      <button id="md-copy" class="btn-secondary btn-sm" aria-label="Copy markdown">📋 Copy</button>
+      <button id="md-clear" class="btn-secondary btn-sm" aria-label="Clear editor">🗑 Clear</button>
+    </div>
+  </div>
+
+  <div class="markdown-grid">
+    <textarea id="md-input" aria-label="Markdown input" spellcheck="true" placeholder="# Hello, Markdown!&#10;&#10;Write **bold**, *italic*, `code`, and more…"></textarea>
+    <div id="md-preview" class="preview-pane" aria-label="Rendered preview" aria-live="polite"></div>
+  </div>
+</section>

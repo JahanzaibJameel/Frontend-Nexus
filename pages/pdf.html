@@ -1,0 +1,22 @@
+<section class="page-shell">
+  <div class="page-header">
+    <h1>PDF</h1>
+    <p>View PDF documents in-browser with PDF.js and generate custom PDFs with jsPDF.</p>
+  </div>
+
+  <div class="pdf-card">
+    <div class="pdf-toolbar">
+      <input type="url" id="pdf-url" value="https://www.w3.org/WAI/WCAG21/wcag21-errata-20230106.pdf"
+        placeholder="https://example.com/file.pdf" aria-label="PDF URL" style="flex:1;min-width:200px" />
+      <button id="pdf-load-url" aria-label="Load PDF from URL">Load PDF</button>
+      <button id="pdf-prev" class="btn-secondary btn-sm" aria-label="Previous page">← Prev</button>
+      <span id="pdf-num" style="font-size:0.85rem;color:var(--text-secondary);white-space:nowrap">No PDF loaded</span>
+      <button id="pdf-next" class="btn-secondary btn-sm" aria-label="Next page">Next →</button>
+      <button id="pdf-generate" class="btn-secondary" aria-label="Generate a sample PDF">⬇ Generate PDF</button>
+    </div>
+    <div id="pdf-status" style="padding:8px 20px;font-size:0.82rem;color:var(--text-muted);font-family:var(--font-mono)"></div>
+    <div id="pdf-canvas-wrap">
+      <canvas id="pdf-canvas" aria-label="PDF page view"></canvas>
+    </div>
+  </div>
+</section>

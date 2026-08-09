@@ -1,0 +1,16 @@
+<section class="page-shell">
+  <div class="page-header">
+    <h1>File Upload</h1>
+    <p>Drag & drop multiple files. Image previews, progress simulation, and file type detection.</p>
+  </div>
+
+  <div class="upload-card">
+    <div id="upload-zone" class="dropzone" role="button" tabindex="0" aria-label="Drop files here or click to select">
+      <span style="font-size:2.5rem;display:block;margin-bottom:10px">📤</span>
+      <p style="color:var(--text-primary);font-weight:600;margin:0">Drop files here or <span style="color:var(--accent)">click to browse</span></p>
+      <p style="font-size:0.85rem;margin:4px 0 0;color:var(--text-muted)">Supports any file type</p>
+    </div>
+    <input type="file" id="upload-input" multiple aria-label="File picker" style="display:none" />
+    <ul id="upload-list" class="upload-list" aria-label="Uploaded files" aria-live="polite"></ul>
+  </div>
+</section>
