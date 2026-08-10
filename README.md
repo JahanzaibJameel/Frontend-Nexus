@@ -23,8 +23,7 @@
 [![Browser Support](https://img.shields.io/badge/Browser-Chrome_Firefox_Safari_Edge-informational.svg)]()
 
 **A production-grade single-page application showcasing the full capabilities of the modern web platform — no frameworks, no bundlers, no build step.**
-
- · [📖 Docs](https://github.com/JahanzaibJameel/frontend-nexus/wiki) · [🐛 Issues](https://github.com/JahanzaibJameel/frontend-nexus/issues)
+ · [🐛 Issues](https://github.com/JahanzaibJameel/frontend-nexus/issues)
 
 </div>
 
