@@ -24,7 +24,7 @@
 
 **A production-grade single-page application showcasing the full capabilities of the modern web platform — no frameworks, no bundlers, no build step.**
 
-[🚀 Live Demo](https://JahanzaibJameel.github.io/frontend-nexus) · [📖 Docs](https://github.com/JahanzaibJameel/frontend-nexus/wiki) · [🐛 Issues](https://github.com/JahanzaibJameel/frontend-nexus/issues)
+ · [📖 Docs](https://github.com/JahanzaibJameel/frontend-nexus/wiki) · [🐛 Issues](https://github.com/JahanzaibJameel/frontend-nexus/issues)
 
 </div>
 
